@@ -10,7 +10,7 @@ const Card = ({ data, index }: CardDataProps) => {
 
   return (
     <div
-      className={`bg-white min-w-[300px] sm:px-6 px-5 py-3 flex flex-col items-center sm:gap-3 gap-2 rounded-lg shadow-xl
+      className={`bg-white min-w-[300px] sm:px-6 px-5 py-3 flex flex-col items-center sm:gap-3 gap-2 rounded-lg sm:shadow-lg shadow-md
     ${styles.container}`}
     >
       <div className="sm:h-[131px] h-[110px]">
