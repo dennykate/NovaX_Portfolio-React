@@ -23,9 +23,7 @@ const Card = ({ data, index }: CardDataProps) => {
       <h3 className="font-[700] sm:text-[21px] text-[18px] text-dark-blue text-center ">
         {data?.name}
       </h3>
-      <p className="font-[400] sm:text-[18px] text-[15px]">
-        {data?.description}
-      </p>
+      <p className="paragraph">{data?.description}</p>
     </div>
   );
 };
