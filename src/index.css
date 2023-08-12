@@ -26,7 +26,7 @@
 
 .paragraph {
   @apply md:text-[20px] sm:text-[18px] text-[12px] font-[400] md:leading-[36.04px] sm:leading-[30px]
-  leading-[24px];
+  leading-[20px];
 }
 
 .custom-text-shadow {
