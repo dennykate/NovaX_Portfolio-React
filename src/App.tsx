@@ -1,9 +1,13 @@
-import { Navbar } from "./components";
+import { Hero, Navbar, OurValue, ScrollNavbar, Services } from "./components";
 
 const App = () => {
   return (
-    <div className="w-full min-h-screen">
+    <div>
       <Navbar />
+      <ScrollNavbar />
+      <Hero />
+      <OurValue />
+      <Services />
     </div>
   );
 };

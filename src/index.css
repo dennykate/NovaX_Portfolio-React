@@ -1,15 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-* {
-  @apply font-open-sans bg-peal-blue;
+:root {
+  --animate-duration: 100ms;
 }
 
-.container {
+* {
+  @apply font-open-sans;
+}
+
+.custom-container {
   @apply max-w-[1024px] mx-auto;
 }
 
-.menu-link {
+.custom-main-container {
+  @apply w-full lg:py-[100px] md:py-[70px] py-[50px];
+}
+
+.heading {
+  @apply md:text-[30px] sm:text-[26px] text-[22px] font-[700] sm:leading-[40.85px] leading-[30px];
+}
+
+.heading-2 {
+  @apply font-[700] lg:text-[23px] text-[20px] text-dark-blue;
+}
+
+.paragraph {
+  @apply md:text-[20px] sm:text-[18px] text-[12px] font-[400] md:leading-[36.04px] sm:leading-[30px]
+  leading-[24px];
+}
+
+.custom-text-shadow {
   text-shadow: 0px 3px 3px #00000058;
+}
+
+.custom-box-shadow {
+  box-shadow: 0px 3px 5px #00000058;
+}
+
+.transition-300 {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.transition-500 {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+.wave-bg {
+  background: url("./assets/blue-wave.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @tailwind base;
