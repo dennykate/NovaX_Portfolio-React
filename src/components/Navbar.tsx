@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsTelephone } from "react-icons/bs";
 import { FaBarsStaggered } from "react-icons/fa6";
 
@@ -18,7 +18,14 @@ const Navbar = ({ scroll }: NavbarProps) => {
   const [active, setActive] = useState<string>("home");
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
+  useEffect(() => {
+    activeSectionHandler();
+  }, []);
+
   const toggleBtnHandler = () => setShowSidebar((prev) => !prev);
+  const activeSectionHandler = (): void => {
+    setActive("home");
+  };
 
   return (
     <div className={`w-full ${styles.mainBgColor}`}>
