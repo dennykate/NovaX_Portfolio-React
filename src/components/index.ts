@@ -1,4 +1,19 @@
 import Navbar from "./Navbar";
-import NavItem from "./NavItem";
+import NavbarItem from "./NavbarItem";
+import ScrollNavbar from "./ScrollNavbar";
+import Hero from "./Hero";
+import Sidebar from "./Sidebar";
+import OurValue from "./OurValue";
+import Services from "./Services";
+import Card from "./Card";
 
-export { Navbar, NavItem };
+export {
+  Navbar,
+  NavbarItem,
+  ScrollNavbar,
+  Hero,
+  Sidebar,
+  OurValue,
+  Services,
+  Card,
+};

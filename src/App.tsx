@@ -1,9 +1,15 @@
-import React from 'react'
+import { Hero, Navbar, OurValue, ScrollNavbar, Services } from "./components";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <Navbar />
+      <ScrollNavbar />
+      <Hero />
+      <OurValue />
+      <Services />
+    </div>
+  );
+};
 
-export default App
+export default App;
