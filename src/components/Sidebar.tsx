@@ -16,7 +16,7 @@ const Sidebar = ({ active, showSidebar, setShowSidebar }: SidebarProps) => {
 
   return (
     <div
-      className={`w-full h-full fixed top-0 left-0 bg-white md:hidden flex flex-col z-[100] transition-300 
+      className={`w-screen h-screen fixed top-0 left-0 bg-white md:hidden flex flex-col z-[100] transition-300 
       ${styles.toggleSidebar}`}
     >
       <div className="w-full h-[60px] flex justify-between items-center  sm:px-2 px-6 ">
