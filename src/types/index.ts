@@ -8,3 +8,8 @@ export interface CardProps {
   name: string;
   description: string;
 }
+
+export interface WorkCardProps {
+  image: string;
+  name: string;
+}

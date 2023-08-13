@@ -1,4 +1,13 @@
-import { Hero, Navbar, OurValue, ScrollNavbar, Services } from "./components";
+import {
+  ContactUs,
+  CustomerBenefits,
+  Hero,
+  Navbar,
+  OurValue,
+  ScrollNavbar,
+  Services,
+  Works,
+} from "./components";
 
 const App = () => {
   return (
@@ -8,6 +17,9 @@ const App = () => {
       <Hero />
       <OurValue />
       <Services />
+      <CustomerBenefits />
+      <Works />
+      <ContactUs />
     </div>
   );
 };
