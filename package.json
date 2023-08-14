@@ -11,11 +11,7 @@
   },
   "dependencies": {
     "@mantine/carousel": "^6.0.19",
-    "@react-email/button": "^0.0.10",
-    "@react-email/html": "^0.0.4",
-    "@react-email/render": "^0.0.7",
     "embla-carousel-autoplay": "^8.0.0-rc11",
-    "embla-carousel-react": "^8.0.0-rc11",
     "nodemailer": "^6.9.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
