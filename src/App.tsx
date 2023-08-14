@@ -1,6 +1,7 @@
 import {
   ContactUs,
   CustomerBenefits,
+  Footer,
   Hero,
   Navbar,
   OurValue,
@@ -20,6 +21,7 @@ const App = () => {
       <CustomerBenefits />
       <Works />
       <ContactUs />
+      <Footer />
     </div>
   );
 };

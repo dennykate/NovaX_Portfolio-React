@@ -109,3 +109,34 @@ export const worksData = [
     name: "Corporate",
   },
 ];
+
+export const contactFormData = [
+  {
+    label: "First Name",
+    id: "first_name",
+  },
+  {
+    label: "Last Name",
+    id: "last_name",
+  },
+  {
+    label: "Mail",
+    id: "mail",
+  },
+  {
+    label: "Phone",
+    id: "phone",
+  },
+];
+
+export const platformsData = [
+  {
+    name: "Mobile App Development",
+  },
+  {
+    name: "Web Developement",
+  },
+  {
+    name: "Other",
+  },
+];

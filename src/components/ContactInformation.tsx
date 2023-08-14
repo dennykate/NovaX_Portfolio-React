@@ -4,8 +4,8 @@ import Cycle from "../assets/cycle.png";
 
 const ContactInformation = () => {
   return (
-    <div className="min-w-[480px] bg-[#CFDFFF] bg-opacity-80 rounded-lg shadow-md p-7 relative">
-      <h3 className="heading-2   md:text-center text-start mb-3 lg:px-0 sm:px-5 px-2">
+    <div className="sm:min-w-[460px] w-full bg-[#CFDFFF] bg-opacity-70 rounded-lg shadow-md p-7 relative overflow-hidden">
+      <h3 className="heading-2 text-center mb-3 lg:px-0 sm:px-5 px-2">
         Contact Information
       </h3>
       <div className="max-w-[395px] mx-auto ">
@@ -14,17 +14,17 @@ const ContactInformation = () => {
           within 24 hours.
         </p>
         <div className="flex flex-col items-start gap-7">
-          <div className="w-full flex items-center gap-7 h-auto ">
+          <div className="w-full flex items-center sm:gap-7 gap-4 h-auto ">
             <div className=" w-12 flex items-center justify-center">
-              <BsPhone size={45} />
+              <BsPhone className="sm:text-[45px] text-[35px]" />
             </div>
             <a href="tel:+959964470356" className="paragraph">
               +95 964 470 356
             </a>
           </div>
-          <div className="w-full flex items-center gap-7 h-auto  ">
+          <div className="w-full flex items-center sm:gap-7 gap-4 h-auto  ">
             <div className="w-12 flex items-center justify-center">
-              <BsEnvelopeAt size={35} />
+              <BsEnvelopeAt className="sm:text-[35px] text-[25px]" />
             </div>
             <a href="mailto:dennykate22@gmail.com" className="paragraph">
               dennykate22@gmail.com

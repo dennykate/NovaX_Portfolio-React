@@ -13,6 +13,10 @@ import WorkCard from "./WorkCard";
 import ContactUs from "./ContactUs";
 import ContactInformation from "./ContactInformation";
 import ContactForm from "./ContactForm";
+import Input from "./Input";
+import Checkbox from "./Checkbox";
+import Textarea from "./Textarea";
+import Footer from "./Footer";
 
 export {
   Navbar,
@@ -30,4 +34,8 @@ export {
   ContactUs,
   ContactForm,
   ContactInformation,
+  Input,
+  Checkbox,
+  Textarea,
+  Footer,
 };
