@@ -3,7 +3,7 @@ import HeroBrain from "../assets/hero.png";
 
 const Hero = () => {
   return (
-    <div className="custom-main-container">
+    <div className="custom-main-container ">
       <div className="custom-container flex flex-col justify-center items-center relative sm:px-0 px-2 ">
         <div
           id="hero-bg"

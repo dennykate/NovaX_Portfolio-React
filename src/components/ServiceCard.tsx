@@ -5,13 +5,13 @@ type CardDataProps = {
   index: number;
 };
 
-const Card = ({ data, index }: CardDataProps) => {
+const ServiceCard = ({ data, index }: CardDataProps) => {
   const styles = useCustomStyle(index);
 
   return (
     <div
-      className={`bg-white min-w-[300px] sm:px-6 px-5 py-3 flex flex-col items-center sm:gap-3 gap-2 rounded-lg sm:shadow-lg shadow-md
-    ${styles.container}`}
+      className={`bg-white min-w-[300px] sm:px-6 px-5 py-3 flex flex-col items-center sm:gap-3 gap-2 rounded-lg shadow-lg
+    ${styles.container} border border-black border-opacity-10`}
     >
       <div className="sm:h-[131px] h-[110px]">
         <img
@@ -39,4 +39,4 @@ const useCustomStyle = (index: number) => {
   };
 };
 
-export default Card;
+export default ServiceCard;

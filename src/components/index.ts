@@ -5,7 +5,18 @@ import Hero from "./Hero";
 import Sidebar from "./Sidebar";
 import OurValue from "./OurValue";
 import Services from "./Services";
-import Card from "./Card";
+import ServiceCard from "./ServiceCard";
+import CustomerBenefits from "./CustomerBenefits";
+import CustomerBenefitCard from "./CustomerBenefitCard";
+import Works from "./Works";
+import WorkCard from "./WorkCard";
+import ContactUs from "./ContactUs";
+import ContactInformation from "./ContactInformation";
+import ContactForm from "./ContactForm";
+import Input from "./Input";
+import Checkbox from "./Checkbox";
+import Textarea from "./Textarea";
+import Footer from "./Footer";
 
 export {
   Navbar,
@@ -15,5 +26,16 @@ export {
   Sidebar,
   OurValue,
   Services,
-  Card,
+  ServiceCard,
+  CustomerBenefits,
+  CustomerBenefitCard,
+  Works,
+  WorkCard,
+  ContactUs,
+  ContactForm,
+  ContactInformation,
+  Input,
+  Checkbox,
+  Textarea,
+  Footer,
 };
