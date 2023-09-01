@@ -1,6 +1,7 @@
 import { ServiceCard, WaypointContainer } from ".";
 import { servicesData } from "../constants";
 import { CardProps } from "../types";
+import { FadeUp } from "./FramerAnimation";
 
 const Services = () => {
   return (
@@ -16,7 +17,9 @@ const Services = () => {
             </h3>
             <div className="flex flex-row flex-nowrap  gap-3 pb-3 overflow-x-auto xl:px-2 lg:px-2 sm:px-5 px-2 hide-scrollbar">
               {servicesData.map((data: CardProps, i: number) => (
-                <ServiceCard key={i} index={i} data={data} />
+                <FadeUp delay={i / 5}>
+                  <ServiceCard key={i} index={i} data={data} />
+                </FadeUp>
               ))}
             </div>
           </div>

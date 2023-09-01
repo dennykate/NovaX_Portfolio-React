@@ -1,5 +1,5 @@
 import { WaypointContainer } from ".";
-import { FadeUp, Fade, FadeLeft } from "./FramerAnimation";
+import { FadeUp,FadeLeft } from "./FramerAnimation";
 
 import HeroBg from "../assets/hero-bg.png";
 import HeroBrain from "../assets/hero.png";
@@ -19,7 +19,7 @@ const Hero = () => {
             <img src={HeroBg} alt="hero-bg" className="w-full" />
           </div>
 
-          <FadeUp>
+          <FadeUp delay={0.2}>
             <div className="sm:w-[225px] md:w-[180px] w-[120px]">
               <img src={HeroBrain} alt="hero-brain" className="w-full" />
             </div>

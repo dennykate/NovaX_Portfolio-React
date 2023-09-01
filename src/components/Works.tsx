@@ -7,7 +7,8 @@ import { worksData } from "../constants";
 import { WorkCardProps } from "../types";
 
 const Works = () => {
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const autoplay: any = useRef(Autoplay({ delay: 2000 }));
 
   return (
     <div
