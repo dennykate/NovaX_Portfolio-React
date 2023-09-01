@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useSelector } from "react-redux";
 import { BsTelephone } from "react-icons/bs";
 import { FaBarsStaggered } from "react-icons/fa6";
 
@@ -15,21 +16,14 @@ type NavbarProps = {
 
 const Navbar = ({ scroll }: NavbarProps) => {
   const styles = useCustomStyle(scroll);
-  const [active, setActive] = useState<string>("home");
+  const { activeName } = useSelector((state: any) => state.navbarItem);
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
-  useEffect(() => {
-    activeSectionHandler();
-  }, []);
-
   const toggleBtnHandler = () => setShowSidebar((prev) => !prev);
-  const activeSectionHandler = (): void => {
-    setActive("home");
-  };
 
   return (
-    <div className={`w-full ${styles.mainBgColor}`}>
-      <div className=" custom-container md:h-[78px] h-[60px] flex justify-between items-center  lg:px-0 sm:px-2 px-6 ">
+    <div className={`w-full  ${styles.mainBgColor}`}>
+      <div className=" custom-container md:h-[78px] h-[60px] flex justify-between items-center  lg:px-2 sm:px-2 px-6 ">
         <div className="md:h-[26px] h-[20px]">
           <img
             src={scroll ? LogoWhite : LogoDarkBlue}
@@ -41,9 +35,9 @@ const Navbar = ({ scroll }: NavbarProps) => {
         <div className="md:flex hidden items-center lg:gap-8 gap-4 ">
           {navbarItems.map((item: NavbarItemProps, index: number) => (
             <NavbarItem
+              active={activeName}
               key={index}
               item={item}
-              active={active}
               scroll={scroll}
             />
           ))}
@@ -70,7 +64,7 @@ const Navbar = ({ scroll }: NavbarProps) => {
       </div>
 
       <Sidebar
-        active={active}
+        active={activeName}
         showSidebar={showSidebar}
         setShowSidebar={setShowSidebar}
       />

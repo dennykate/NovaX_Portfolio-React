@@ -29,4 +29,5 @@ export interface FormProps {
   mail: string;
   phone: string;
   message: string;
+  platforms: string[];
 }

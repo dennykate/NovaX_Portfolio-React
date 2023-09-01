@@ -1,4 +1,5 @@
 import { HiXMark } from "react-icons/hi2";
+import { BsTelephone } from "react-icons/bs";
 
 import LogoDarkBlue from "../assets/logo-dark-blue.png";
 import { navbarItems } from "../constants";
@@ -29,7 +30,7 @@ const Sidebar = ({ active, showSidebar, setShowSidebar }: SidebarProps) => {
         </button>
       </div>
 
-      <div className="w-full flex justify-center mt-5">
+      <div className="w-full flex justify-center flex-col items-center mt-5">
         <div className="w-[50%] flex flex-col gap-5">
           {navbarItems.map(({ name, link, delay }, i) => (
             <a
@@ -47,6 +48,17 @@ const Sidebar = ({ active, showSidebar, setShowSidebar }: SidebarProps) => {
             </a>
           ))}
         </div>
+
+        <div className="w-[80%] h-[45px] mt-[40px] overflow-hidden">
+          <a
+            href="tel:09964470356"
+            className={`w-full  h-full  rounded shadow-sm flex justify-center items-center gap-4 bg-dark-blue
+            ${styles.sideItemAnimation("delay-[800ms]")} transition-500`}
+          >
+            <BsTelephone size={18} className="text-white" />
+            <h6 className={`font-[400] text-[15px] text-white`}>Contact Us</h6>
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -61,7 +73,7 @@ const useCustomStyle = (showSidebar: boolean, active: string) => {
     active == name.toLowerCase() ? "text-golden-yellow" : "text-dark-blue";
   const toggleSidebar = showSidebar
     ? " translate-x-0"
-    : "translate-x-[-100%] delay-[1000ms]";
+    : "translate-x-[-100%] delay-[1100ms]";
 
   return { sideItemAlign, sideItemAnimation, sideItemColor, toggleSidebar };
 };

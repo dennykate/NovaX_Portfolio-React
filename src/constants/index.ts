@@ -14,27 +14,27 @@ import Work5 from "../assets/work-5.png";
 export const navbarItems = [
   {
     name: "Home",
-    link: "",
+    link: "#home",
     delay: "delay-[300ms]",
   },
   {
     name: "Our Value",
-    link: "",
+    link: "#our-value",
     delay: "delay-[400ms]",
   },
   {
     name: "Services",
-    link: "",
+    link: "#services",
     delay: "delay-[500ms]",
   },
   {
-    name: "Benifits",
-    link: "",
+    name: "Benefits",
+    link: "#benefits",
     delay: "delay-[600ms]",
   },
   {
     name: "Contact",
-    link: "",
+    link: "#contact",
     delay: "delay-[700ms]",
   },
 ];

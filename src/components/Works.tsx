@@ -10,7 +10,10 @@ const Works = () => {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
 
   return (
-    <div className="w-full py-2 cursor-pointer bg-light-dark-blue select-none">
+    <div
+      id="works"
+      className="w-full py-2 cursor-pointer bg-light-dark-blue select-none"
+    >
       <Carousel
         slideSize="28%"
         loop

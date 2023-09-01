@@ -2,14 +2,19 @@
 
 :root {
   --animate-duration: 100ms;
+  scroll-behavior: smooth;
 }
 
 * {
   @apply font-open-sans;
 }
 
+body {
+  @apply bg-peal-blue;
+}
+
 .custom-container {
-  @apply max-w-[1024px] mx-auto;
+  @apply max-w-[1280px] mx-auto;
 }
 
 .custom-main-container {
@@ -25,13 +30,13 @@
 }
 
 .paragraph {
-  @apply md:text-[20px] sm:text-[18px] text-[12px] font-[400] md:leading-[32.04px] sm:leading-[30px]
+  @apply md:text-[20px] sm:text-[18px] text-[15px] font-[400] md:leading-[32.04px] sm:leading-[30px]
   leading-[24px] text-dark-blue;
 }
 
 .paragraph-2 {
-  @apply md:text-[20px] sm:text-[18px] text-[12px] font-[400] md:leading-[27.04px] sm:leading-[24px]
-  leading-[20px] text-dark-blue;
+  @apply md:text-[20px] sm:text-[18px] text-[15px] font-[400] md:leading-[27.04px] sm:leading-[24px]
+  leading-[24px] text-dark-blue;
 }
 
 .custom-text-shadow {

@@ -17,6 +17,7 @@ import Input from "./Input";
 import Checkbox from "./Checkbox";
 import Textarea from "./Textarea";
 import Footer from "./Footer";
+import WaypointContainer from "./WaypointContainer";
 
 export {
   Navbar,
@@ -38,4 +39,5 @@ export {
   Checkbox,
   Textarea,
   Footer,
+  WaypointContainer,
 };

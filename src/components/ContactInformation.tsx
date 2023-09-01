@@ -18,16 +18,16 @@ const ContactInformation = () => {
             <div className=" w-12 flex items-center justify-center">
               <BsPhone className="sm:text-[45px] text-[35px]" />
             </div>
-            <a href="tel:+959964470356" className="paragraph">
-              +95 964 470 356
+            <a href="tel:+959970957602 " className="paragraph">
+              +959 970 957 602
             </a>
           </div>
           <div className="w-full flex items-center sm:gap-7 gap-4 h-auto  ">
             <div className="w-12 flex items-center justify-center">
               <BsEnvelopeAt className="sm:text-[35px] text-[25px]" />
             </div>
-            <a href="mailto:dennykate22@gmail.com" className="paragraph">
-              dennykate22@gmail.com
+            <a href="mailto:novaxdevelopment@gmail.com" className="paragraph">
+              novaxdevelopment@gmail.com
             </a>
           </div>
         </div>

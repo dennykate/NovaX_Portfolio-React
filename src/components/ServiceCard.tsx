@@ -23,7 +23,7 @@ const ServiceCard = ({ data, index }: CardDataProps) => {
       <h3 className="font-[700] sm:text-[21px] text-[18px] text-dark-blue text-center ">
         {data?.name}
       </h3>
-      <p className="paragraph">{data?.description}</p>
+      <p className="paragraph text-justify">{data?.description}</p>
     </div>
   );
 };

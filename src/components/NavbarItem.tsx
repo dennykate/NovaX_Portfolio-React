@@ -7,7 +7,10 @@ const NavbarItem = ({ item, active, scroll }: ItemProps) => {
   const styles = useCustomStyle(isActive, scroll);
 
   return (
-    <div className=" h-[60px] flex justify-center items-center relative cursor-pointer group px-[2px]">
+    <a
+      href={item.link}
+      className=" h-[60px] flex justify-center items-center relative cursor-pointer group px-[2px]"
+    >
       <h6
         className={`font-[500] text-[16px] leading-[21.79px] tracking-wide custom-text-shadow ${styles.textColor}`}
       >
@@ -24,7 +27,7 @@ const NavbarItem = ({ item, active, scroll }: ItemProps) => {
          rounded-full  delay-200 translate-y-[-0.3px] ${styles.underDotColor} ${styles.underDotAnimation}`}
         />
       </div>
-    </div>
+    </a>
   );
 };
 
